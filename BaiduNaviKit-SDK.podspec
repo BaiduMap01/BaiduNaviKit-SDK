@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
 
   s.license      = { :type => 'Copyright', :text => 'Copyright (c) 2020 BaiduLBS' }
 
-  s.author       = { "baidu navi sdk" => "v_wangdachuan@baidu.com" }
+  s.author       = { "baidu navi sdk" => "dituapi_01@163@baidu.com" }
 
   # 导航sdk使用了cdn加速
   s.source       = { :http => "https://lbsyun-baidu.cdn.bcebos.com/iossdk/offline/navi/#{s.version}/BaiduNaviKit-SDKV#{s.version}.zip" }
