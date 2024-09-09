@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
 
   s.name         = 'BaiduNaviKit-SDK'
 
-  s.version      = '6.6.2.1'
+  s.version      = '6.6.2.2'
 
   s.summary      = '百度导航iOS SDK（CocoaPods百度导航官方库,导航+基础地图包）'
 
@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
 
   s.license      = { :type => 'Copyright', :text => 'Copyright (c) 2020 BaiduLBS' }
 
-  s.author       = { "baidu navi sdk" => "dituapi_01@163@baidu.com" }
+  s.author       = { "baidu navi sdk" => "dituapi_01@163.com" }
 
   # 导航sdk使用了cdn加速
   s.source       = { :http => "https://lbsyun-baidu.cdn.bcebos.com/iossdk/offline/navi/#{s.version}/BaiduNaviKit-SDKV#{s.version}.zip" }
@@ -35,9 +35,9 @@ Pod::Spec.new do |s|
   
   s.platform     = :ios, '10.0'
   # 声明ARC
-  s.requires_arc = true 
+  s.requires_arc = true
   # 声明静态库
-  s.static_framework = true 
+  s.static_framework = true
 
   # 配置当前库的 bitcode
   s.pod_target_xcconfig  = { 'ENABLE_BITCODE' => 'NO',
@@ -46,10 +46,10 @@ Pod::Spec.new do |s|
   # 配置宿主工程警告，bitcode
   s.user_target_xcconfig = { 'OTHER_LDFLAGS' => '-w',
                              'ENABLE_BITCODE' => 'NO',
-                             'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' } 
+                             'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
 
-  # 系统依赖库 
+  # 系统依赖库
   s.frameworks = ['Accelerate', 'AdSupport', 'AssetsLibrary', 'UserNotifications', 'MediaPlayer', 'CoreLocation', 'CoreBluetooth', 'CoreTelephony', 'AVFAudio']
   s.libraries = ['sqlite3.0', 'c++', 'iconv', 'z']
 
